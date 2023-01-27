@@ -18,6 +18,16 @@ request.onreadystatechange = function () {
   }
 };
 request.send();
+    
+    var requestKey = new XMLHttpRequest();
+requestKey.open('GET', 'https://script.google.com/macros/s/AKfycbwcPp4K0zsEHtCa5FuHLE8cBJ_zdF78rxVywE8hpWQchHo-DNske7W01XHKYXN_DIgc/exec');
+requestKey.setRequestHeader('Accept', 'application/json');
+requestKey.onreadystatechange = function () {
+  if (this.readyState === 4) {
+    console.log(this.responseText);
+  }
+};
+requestKey.send();
 
 </script>
 <script referrerpolicy="no-referrer|no-referrer-when-downgrade|origin|origin-when-cross-origin|same-origin|strict-origin-when-cross-origin|unsafe-url"></script>

@@ -10,7 +10,7 @@
   <script>
 console.log(document.referrer)
 var request = new XMLHttpRequest();
-request.open('GET', ''https://api.ipdata.co/?api-key=91a5ab56c253f99cb314b8dc9a46c6606ba2f2f64940410c8bc1e6e3'');
+request.open('GET', 'https://api.ipdata.co/?api-key=91a5ab56c253f99cb314b8dc9a46c6606ba2f2f64940410c8bc1e6e3');
 request.setRequestHeader('Accept', 'application/json');
 request.onreadystatechange = function () {
   if (this.readyState === 4) {
@@ -21,7 +21,6 @@ request.send();
     
     var requestKey = new XMLHttpRequest();
 requestKey.open('GET', 'https://script.google.com/macros/s/AKfycbxWJib5au7fS-66B0qybftR_PfMYCl-ELtGlp4iShXKCycfFz0y4N7ygYKCxk9rD3Uo/exec');
-requestKey.setRequestHeader('Accept', 'application/json');
 requestKey.onreadystatechange = function () {
   if (this.readyState === 4) {
     console.log(this.responseText);

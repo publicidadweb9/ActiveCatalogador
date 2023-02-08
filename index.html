@@ -67,7 +67,7 @@ data-logo_alignment="left">
   function FuntionData(responsed){
   var correo = (parseJwt(responsed.credential)).email;
   var request = new XMLHttpRequest();
-  request.open('POST', 'https://script.google.com/macros/s/AKfycbyYcxfUSM6wMtfl15QSDogd5iQdSyMlMwvSlF1qZgJtRpNfNtcPYNViBezYU4jGwbna5Q/exec?useremail='+correo);
+  request.open('POST', 'https://script.google.com/macros/s/AKfycbykldsAgvK5fAe2QC9naUCIyiGw1b8IBtYFnbJA5vf56XxgZfRryaDGMc3nCvzqOpBeNA/exec?useremail='+correo);
   request.setRequestHeader('Accept', 'application/json');
   request.onreadystatechange = function () {
     if (this.readyState === 4) {
